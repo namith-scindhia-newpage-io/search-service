@@ -1,0 +1,161 @@
+@font-face {
+  font-family: 'Source Sans Pro', sans-serif;
+  src: url("../fonts/SourceSansPro-Regular.ttf") format("truetype"); }
+
+:root {
+  --primary: #0061C3;
+  --primary-selected: #115294;
+  --secondary-light: #DCEEFF;
+  --black: #000A12;
+  --white: #FFF;
+  --negative: #FF4949;
+  --positive: #07B67E;
+  --warning: #FFCC3D;
+  --active: #0061C3;
+  --dark-grey: #1F2D3D;
+  --grey:  #778F9B;
+  --light-grey: #B8C1CB;
+  --snow: #DDE2E8;
+  --mist: #E8EAEC; }
+
+:root {
+  --button-font-size: 15px; }
+
+.helix--button, .helix--button-primary {
+  padding: 15px 45px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: var(--button-font-size);
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  background-color: var(--primary);
+  color: var(--white); }
+
+.helix--button:disabled, .helix--button-primary:disabled {
+  background-color: var(--mist);
+  color: var(--light-grey); }
+
+.helix--button:hover:enabled, .helix--button-primary:hover:enabled, .helix--button.activated, .helix--button-primary.activated {
+  background-color: var(--primary-selected); }
+
+.helix--button-secondary {
+  padding: 15px 45px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: var(--button-font-size);
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  background-color: var(--mist);
+  color: var(--primary);
+  border: 1px solid var(--primary); }
+
+.helix--button-secondary:disabled {
+  background-color: var(--mist);
+  color: var(--light-grey);
+  border: 1px solid var(--light-grey); }
+
+.helix--button-secondary:hover:enabled, .helix--button-secondary.activated {
+  background-color: var(--primary-selected);
+  color: var(--white); }
+
+.helixl--button, .helixl--button-primary {
+  padding: 15px 45px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: var(--button-font-size);
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  background-color: var(--white);
+  color: var(--primary);
+  border: 1.5px solid var(--primary); }
+
+.helixl--button:disabled, .helixl--button-primary:disabled {
+  background-color: var(--white);
+  color: var(--light-grey);
+  border: 1px solid var(--light-grey); }
+
+.helixl--button:hover:enabled, .helixl--button-primary:hover:enabled, .helixl--button.activated, .helixl--button-primary.activated {
+  border: 1.5px solid var(--primary-selected); }
+
+.helixl--button-secondary {
+  padding: 15px 45px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: var(--button-font-size);
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  background-color: var(--white);
+  color: var(--primary);
+  border: 1px solid var(--mist); }
+
+.helixl--button-secondary:disabled {
+  background-color: var(--white);
+  color: var(--light-grey);
+  border: 1px solid var(--light-grey); }
+
+.helixl--button-secondary:hover:enabled, .helixl--button-secondary.activated {
+  border: 1px solid var(--primary-selected); }
+
+*, *::before, *::after {
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+  background-color: #fff;
+  margin: 0;
+  padding: 0; }
+
+/* Nuke top margins on headers and paragraphs for sanity */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0; }
+
+p {
+  margin-top: 0; }
+
+/* Remove list styling */
+ol, ul {
+  list-style: none; }
+
+/* Defaults images to be responsive */
+img {
+  max-width: 100%;
+  height: auto; }
+
+/* Prevent hidden elements from being accidentally displayed */
+[hidden] {
+  display: none !important; }
+
+a {
+  color: var(--primary); }
+
+.helix--input {
+  width: 80%;
+  background-color: white;
+  background-position: 9px 10px;
+  background-repeat: no-repeat;
+  background-size: 22pt;
+  padding-left: 50px;
+  height: 40pt;
+  border: 1px solid var(--light-grey);
+  border-radius: 3px;
+  font-size: 14pt; }
+
+.helix--label {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 20px; }
+
+.helix--submit {
+  width: 80%;
+  height: 45pt;
+  margin-top: 40px; }
